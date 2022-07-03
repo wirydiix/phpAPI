@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "f25cdda1-a7e1-4607-ae39-00c0ef2ab3b1",
+		"name": "Comment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$13$/fUWYkDOkdKvEvVdctZT6e.07DWumKxB3ym96LgURDl/JwrlQo2se",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas debitis dolorem magnam non accusantium. Maxime facere eaque, repellendus dolorum illum fuga cum magni rem accusamus enim iusto vitae unde!",
+							"type": "text"
+						},
+						{
+							"key": "id_prd",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "login",
+							"value": "Dumick",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://yii/comment",
+					"protocol": "http",
+					"host": [
+						"yii"
+					],
+					"path": [
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://yii/comment/2",
+					"protocol": "http",
+					"host": [
+						"yii"
+					],
+					"path": [
+						"comment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

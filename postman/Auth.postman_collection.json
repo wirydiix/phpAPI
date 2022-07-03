@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a044698f-afc6-4627-9bbe-a6bb8abaf6af",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "user_2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user_2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://yii/auth",
+					"protocol": "http",
+					"host": [
+						"yii"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://yii/logout",
+					"protocol": "http",
+					"host": [
+						"yii"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
